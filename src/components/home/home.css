@@ -1,0 +1,156 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.img100 {
+    max-height: 600px;
+    max-width: 600px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+}
+
+.p1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.p22 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #0796D6;
+}
+
+.p3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0796D6;
+}
+
+.button {
+    padding: 3px 14px;
+    border-radius: 15px;
+    background-color: #0796D6;
+    border: none;
+    color: white;
+    cursor: pointer;
+   
+}
+
+.button:hover,
+.button:hover {
+    background-color: #0796D6;
+    color: white;
+    transition: 0.5s ease-in;
+    font-size: 15px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #0796D6;
+    margin: 40px 0;
+    width: 100%;
+}
+.text{
+    position: absolute;
+    top: 180px;
+    left: 960px;
+}
+.p10{
+    font-size: 30px;
+    font-weight: bold;
+}
+.p100{
+    color: #0796D6;
+}
+.idk{
+    text-align: center;
+    margin-top: 80px;
+}
+.form{
+    margin-top: 30px;
+    width: 500px;
+    height: 450px;
+    max-width: 800px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow:
+  /* solid top and bottom */
+  0 -6px 0 #0796D6,
+  0 6px 0 #0796D6,
+
+  /* soft side glow */
+  -8px 0 15px -5px rgba(7,150,214,0.6),   /* left */
+  8px 0 15px -5px rgba(7,150,214,0.6);    /* right */
+
+
+
+
+}
+.shii{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.lahaol{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    justify-content: center;
+}
+.loine{
+    margin-top: 100px;
+    width: 10%;
+    height: 20px;
+    margin: 0 auto;
+}
+.form {
+  width: 300px;
+  margin: 50px auto; /* centers form */
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+.form label {
+  color: #0796D6;         /* blue label color */
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.form input {
+  border: none;
+  border-bottom: 1px solid #ddd; /* subtle bottom line */
+  padding: 8px 0;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form input:focus {
+  border-bottom: 1px solid #0796D6; /* blue highlight on focus */
+}
+
+.form button {
+  background-color: #0796D6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 20px;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #0476a7;
+}
