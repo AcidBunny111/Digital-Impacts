@@ -1,133 +1,137 @@
-*{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* ============ BASE STYLES (unchanged) ============ */
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .img100 {
-    max-height: 600px;
-    max-width: 600px;
+  max-height: 600px;
+  max-width: 600px;
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+  position: relative;
 }
 
 .p1 {
-    font-size: 40px;
-    font-weight: bold;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .p22 {
-    font-size: 40px;
-    font-weight: bold;
-    color: #0796D6;
+  font-size: 40px;
+  font-weight: bold;
+  color: #0796d6;
 }
 
 .p3 {
-    font-size: 30px;
-    font-weight: bold;
-    color: #0796D6;
+  font-size: 30px;
+  font-weight: bold;
+  color: #0796d6;
 }
 
 .button {
-    padding: 3px 14px;
-    border-radius: 15px;
-    background-color: #0796D6;
-    border: none;
-    color: white;
-    cursor: pointer;
-   
+  padding: 3px 14px;
+  border-radius: 15px;
+  background-color: #0796d6;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
 .button:hover,
 .button:hover {
-    background-color: #0796D6;
-    color: white;
-    transition: 0.5s ease-in;
-    font-size: 15px;
+  background-color: #0796d6;
+  color: white;
+  transition: 0.5s ease-in;
+  font-size: 15px;
 }
 
 hr {
-    border: none;
-    height: 2px;
-    background-color: #0796D6;
-    margin: 40px 0;
-    width: 100%;
+  border: none;
+  height: 2px;
+  background-color: #0796d6;
+  margin: 40px 0;
+  width: 100%;
 }
-.text{
-    position: absolute;
-    top: 180px;
-    left: 960px;
-}
-.p10{
-    font-size: 30px;
-    font-weight: bold;
-}
-.p100{
-    color: #0796D6;
-}
-.idk{
-    text-align: center;
-    margin-top: 80px;
-}
-.form{
-    margin-top: 30px;
-    width: 500px;
-    height: 450px;
-    max-width: 800px;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow:
-  /* solid top and bottom */
-  0 -6px 0 #0796D6,
-  0 6px 0 #0796D6,
 
-  /* soft side glow */
-  -8px 0 15px -5px rgba(7,150,214,0.6),   /* left */
-  8px 0 15px -5px rgba(7,150,214,0.6);    /* right */
-
-
-
-
+.text {
+  position: absolute;
+  top: 180px;
+  left: 960px;
 }
-.shii{
-    margin-top: 50px;
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
+
+.p10 {
+  font-size: 30px;
+  font-weight: bold;
 }
-.lahaol{
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 70px;
-    justify-content: center;
+
+.p100 {
+  color: #0796d6;
 }
-.loine{
-    margin-top: 100px;
-    width: 10%;
-    height: 20px;
-    margin: 0 auto;
+
+.idk {
+  text-align: center;
+  margin-top: 80px;
 }
+
+.form {
+  margin-top: 30px;
+  width: 500px;
+  height: 450px;
+  max-width: 800px;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow:
+    0 -6px 0 #0796d6,
+    0 6px 0 #0796d6,
+    -8px 0 15px -5px rgba(7, 150, 214, 0.6),
+    8px 0 15px -5px rgba(7, 150, 214, 0.6);
+}
+
+.shii {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.lahaol {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 70px;
+  justify-content: center;
+}
+
+.loine {
+  margin-top: 100px;
+  width: 10%;
+  height: 20px;
+  margin: 0 auto;
+}
+
 .form {
   width: 300px;
-  margin: 50px auto; /* centers form */
+  margin: 50px auto;
   display: flex;
   flex-direction: column;
   font-family: Arial, sans-serif;
 }
 
 .form label {
-  color: #0796D6;         /* blue label color */
+  color: #0796d6;
   font-size: 15px;
   margin-top: 15px;
 }
 
 .form input {
   border: none;
-  border-bottom: 1px solid #ddd; /* subtle bottom line */
+  border-bottom: 1px solid #ddd;
   padding: 8px 0;
   font-size: 14px;
   outline: none;
@@ -135,11 +139,11 @@ hr {
 }
 
 .form input:focus {
-  border-bottom: 1px solid #0796D6; /* blue highlight on focus */
+  border-bottom: 1px solid #0796d6;
 }
 
 .form button {
-  background-color: #0796D6;
+  background-color: #0796d6;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -153,4 +157,133 @@ hr {
 
 .form button:hover {
   background-color: #0476a7;
+}
+
+/* ===================================================== */
+/* ✅ RESPONSIVE ADJUSTMENTS BELOW                       */
+/* ===================================================== */
+
+/* --- For large tablets and smaller desktops --- */
+@media (max-width: 1200px) {
+  .container {
+    gap: 60px;
+  }
+  .text {
+    left: 700px;
+  }
+  .img100 {
+    max-width: 500px;
+    max-height: 500px;
+  }
+}
+
+/* --- For tablets --- */
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .text {
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .img100 {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  .p1,
+  .p22 {
+    font-size: 32px;
+  }
+  .p3 {
+    font-size: 24px;
+  }
+  hr {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
+/* --- For mobile phones --- */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .text {
+    position: static;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .img100 {
+    width: 90%;
+    height: auto;
+  }
+
+  .p1,
+  .p22 {
+    font-size: 26px;
+  }
+
+  .p3 {
+    font-size: 20px;
+  }
+
+  .button {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+
+  .shii {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  .form {
+    width: 90%;
+    height: auto;
+  }
+
+  .loine {
+    width: 30%;
+    height: 10px;
+  }
+}
+
+/* --- For very small phones --- */
+@media (max-width: 480px) {
+  .p1,
+  .p22 {
+    font-size: 22px;
+  }
+  .p3 {
+    font-size: 18px;
+  }
+  .img100 {
+    max-width: 100%;
+    height: auto;
+  }
+  .button {
+    font-size: 13px;
+    padding: 5px 12px;
+  }
+  .form {
+    padding: 20px;
+    width: 95%;
+  }
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
 }

@@ -1,47 +1,74 @@
-*{
+/* ==========================
+   BASE STYLES
+========================== */
+* {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.footer{
+
+.footer {
     background-color: #0796D6;
     text-align: center;
     color: white;
-    padding: 20px 0;
-    margin-top: 40px;
-    height: 750px;
-    max-height:800px
+    padding: 50px 20px 20px 20px;
 }
-.lmao{
+
+.lmao {
     font-size: 20px;
     font-weight: bold;
     color: black;
 }
-.setting{
+
+.setting {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     gap: 100px;
+    flex-wrap: wrap; /* for responsiveness */
+    margin-bottom: 50px;
 }
-.footerul{
+
+.footerul {
     list-style: none;
-    color: white;
     padding: 0;
-    margin: 0;
+    margin-top: 20px;
     text-align: left;
-    
 }
-.footerlink{
+
+.footerlink {
     margin-bottom: 10px;
-    color: white;
-    list-style-type: none;
-    text-align: left;
-    padding: 7px;
 }
-.footera{
+
+.footera {
     text-decoration: none;
     color: white;
-    text-align: left;
+    transition: color 0.3s;
 }
-.flags{
+
+.footerlink:hover .footera {
+    color: black;
+}
+
+.flag {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 100px;
+    flex-wrap: wrap; /* for mobile stacking */
+    margin-bottom: 40px;
+}
+
+.omgg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.flags {
     width: 80px;
     height: 80px;
     border: 1px solid #0796D6;
@@ -50,46 +77,94 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
     background-color: #0796D6;
 }
-.usa{
+
+.usa, .uk, .canada {
     width: 140%;
     height: 140%;
     object-fit: cover;
 }
-.uk{
-    width: 140%;
-    height: 140%;
-    object-fit: cover;
-}
-.canada{
-    width: 140%;
-    height: 140%;
-    object-fit: cover;
-}
-.flag{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 300px;
-}
-.bolding{
+
+.bolding {
     font-weight: bold;
     font-size: 13px;
 }
-.omgg{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
-.footerhr{
-    margin: 0 auto;
+
+.footerhr {
+    margin: 20px auto;
     height: 2px;
     width: 95%;
-    color: white;
     background: white;
 }
-.footerlink:hover a{
-    color: black;
+
+/* ==========================
+   RESPONSIVE ADJUSTMENTS
+========================== */
+
+/* Tablets ≤ 992px */
+@media (max-width: 992px) {
+    .setting {
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .flag {
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .flags {
+        width: 70px;
+        height: 70px;
+    }
+
+    .usa, .uk, .canada {
+        width: 130%;
+        height: 130%;
+    }
+}
+
+/* Small tablets / Large phones ≤ 768px */
+@media (max-width: 768px) {
+    .setting {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .flag {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* Mobile ≤ 480px */
+@media (max-width: 480px) {
+    .footer {
+        padding: 40px 10px 20px 10px;
+    }
+
+    .lmao {
+        font-size: 18px;
+    }
+
+    .footerul {
+        text-align: center;
+    }
+
+    .flags {
+        width: 60px;
+        height: 60px;
+    }
+
+    .usa, .uk, .canada {
+        width: 120%;
+        height: 120%;
+    }
+
+    .bolding {
+        font-size: 12px;
+    }
 }

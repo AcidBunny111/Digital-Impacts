@@ -1,75 +1,219 @@
-.c{
-    text-align: center;
-    margin-top: 80px;
-    font-size: 30px;
-    font-weight: bold;
+/* ==========================
+   BASE STYLES (unchanged)
+========================== */
+.c {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 30px;
+  font-weight: bold;
 }
-.color{
-    color: #0796D6;
-}
-.c1{
-    display: flex;
-    gap: 40px;
-    margin-top: 50px;
-    text-align: center;
-    justify-content: center;
-}
-.style{
-    max-width: 300px;
-    height: 344px;
-    border-radius: 10px;
-    padding: 50px;
-    justify-content: center;
-    box-shadow:
-  /* solid top and bottom */
-  0 -6px 0 #0796D6,
-  0 6px 0 #0796D6,
 
-  /* soft side glow */
-  -8px 0 15px -5px rgba(7,150,214,0.6),   /* left */
-  8px 0 15px -5px rgba(7,150,214,0.6);    /* right */
+.color {
+  color: #0796d6;
+}
 
-    cursor: pointer;
+.c1 {
+  display: flex;
+  gap: 40px;
+  margin-top: 50px;
+  text-align: center;
+  justify-content: center;
 }
-.heading{
-    font-size: 24px;
-    font-weight: bold;
 
+.style {
+  max-width: 300px;
+  height: 344px;
+  border-radius: 10px;
+  padding: 50px;
+  justify-content: center;
+  box-shadow:
+    0 -6px 0 #0796d6,
+    0 6px 0 #0796d6,
+    -8px 0 15px -5px rgba(7, 150, 214, 0.6),
+    8px 0 15px -5px rgba(7, 150, 214, 0.6);
+  cursor: pointer;
 }
-.c1:hover{
-    transition: 0.5s ease-in;
-    font-size: 15px;
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
 }
-.c2{
+
+.c1:hover {
+  transition: 0.5s ease-in;
+  font-size: 15px;
+}
+
+.c2 {
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.cc2 {
+  color: #0796d6;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.ccc {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.c3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  justify-items: center;
+  background: #f7f7f7;
+}
+
+img {
+  max-width: 400px;
+  max-height: 250px;
+  padding: 20px;
+}
+
+.c4 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* ==========================
+   RESPONSIVE ADJUSTMENTS
+========================== */
+
+/* --- For large tablets (≤1200px) --- */
+@media (max-width: 1200px) {
+  .c1 {
+    gap: 20px;
+  }
+
+  .style {
+    max-width: 260px;
+    padding: 40px;
+  }
+
+  .heading {
+    font-size: 22px;
+  }
+
+  .c3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  img {
+    max-width: 350px;
+    max-height: 220px;
+  }
+}
+
+/* --- For tablets (≤992px) --- */
+@media (max-width: 992px) {
+  .c {
+    font-size: 26px;
+  }
+
+  .c1 {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 35px;
-    font-weight: bold;
+    gap: 30px;
+  }
+
+  .style {
+    max-width: 90%;
+    height: auto;
+    padding: 30px;
+  }
+
+  .c2,
+  .cc2 {
+    font-size: 30px;
+  }
+
+  .c3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  img {
+    max-width: 300px;
+    height: auto;
+  }
 }
-.cc2{
-    color : #0796D6;
-    font-weight: bold;
-    font-size: 35px;
-}
-.ccc{
-    margin-top: 50px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-.c3{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0px;
-    justify-items: center;
-    background: #F7F7F7;
-}
-img{
-    max-width: 400px;
-    max-height: 250px;
+
+/* --- For mobile phones (≤768px) --- */
+@media (max-width: 768px) {
+  .c {
+    font-size: 24px;
+  }
+
+  .c1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .style {
+    max-width: 90%;
+    height: auto;
     padding: 20px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .c3 {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  img {
+    width: 90%;
+    max-width: 280px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .c2,
+  .cc2 {
+    font-size: 26px;
+  }
+
+  .c4 {
+    font-size: 14px;
+  }
 }
-.c4{
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
+
+/* --- For very small phones (≤480px) --- */
+@media (max-width: 480px) {
+  .c {
+    font-size: 20px;
+  }
+
+  .style {
+    padding: 15px;
+  }
+
+  .heading {
+    font-size: 18px;
+  }
+
+  .c2,
+  .cc2 {
+    font-size: 22px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .c4 {
+    font-size: 13px;
+  }
 }
